@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>爱网社团温湿度</title>
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+</head>
+<body ontouchstart>
+<div class="page-group">
+
+    <div class="page page-current">
+        <header class="bar bar-nav">
+            <h1 class="title">爱网社团温湿度实时数据</h1>
+        </header>
+        <br/>
+        <div class="content-padded">
+            <h6>硬件基于树莓派3,基于DH11模块的实时温湿度检测.后台采用flask.</h6>
+        </div>
+        <!-- 你的html代码 -->
+        <div class="content">
+            <div class="list-block cards-list">
+                <ul>
+                    <li class="card">
+                        <div class="card-header">当期北京时间</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">{{time}}</div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-header">当前室内气温</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">{{temperature}}℃</div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-header">当前室内湿度</div>
+                        <div class="card-content">
+                            <div class="card-content-inner">{{humidity}}%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
