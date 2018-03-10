@@ -1,0 +1,2 @@
+# inet_temperature_humidity_detection
+Inet社团的温湿度检测.基于树莓派和DH11模块
